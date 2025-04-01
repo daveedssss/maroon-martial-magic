@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-black"
         style={{
-          backgroundImage: "url('/taekwondo-bg.jpg')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1487252665478-49b61b47f302')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
