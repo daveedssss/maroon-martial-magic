@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
@@ -17,6 +18,16 @@ const HeroSection = () => {
       
       <div className="container relative z-20 mx-auto px-4 h-full flex flex-col justify-center">
         <div className="max-w-3xl">
+          <div className="flex items-center gap-4 mb-6">
+            <Avatar className="h-20 w-20 border-2 border-white">
+              <AvatarImage src="/lovable-uploads/33e9d2d0-b839-4797-b2b2-471021a9e58a.png" alt="Dave Hermino" />
+              <AvatarFallback className="bg-maroon text-white text-xl">DH</AvatarFallback>
+            </Avatar>
+            <div>
+              <h2 className="text-white text-2xl font-medium">Dave Hermino</h2>
+              <p className="text-gray-200">Master Instructor</p>
+            </div>
+          </div>
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             MASTER THE ART OF <span className="text-maroon">TAEKWONDO</span>
           </h1>

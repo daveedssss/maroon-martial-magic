@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   return (
@@ -23,7 +24,20 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8">
+                  <Avatar className="h-32 w-32 border-2 border-maroon">
+                    <AvatarImage src="/lovable-uploads/33e9d2d0-b839-4797-b2b2-471021a9e58a.png" alt="Dave Hermino" />
+                    <AvatarFallback className="bg-maroon text-white text-3xl">DH</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <h2 className="text-3xl font-bold mb-2">Dave Hermino</h2>
+                    <p className="text-maroon font-semibold text-xl mb-2">Founder & Head Instructor</p>
+                    <p className="text-gray-600">
+                      Certified Taekwondo Master with over 15 years of experience
+                    </p>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-6">Our Story</h3>
                 <p className="text-gray-700 mb-4">
                   Dave Hermino Taekwondo was founded with a passion for sharing the transformative 
                   power of martial arts with our community. What began as a small training group 
