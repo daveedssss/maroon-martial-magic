@@ -8,9 +8,9 @@ const HeroSection = () => {
     <section className="relative h-[80vh] overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent z-10"></div>
       <div 
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0"
         style={{
-          backgroundImage: "url('/lovable-uploads/b06a27c6-84f5-4cd9-a98a-191bba40331c.png')",
+          backgroundImage: "url('/lovable-uploads/7e8d7fe7-d739-4853-9b32-20547fa4b18c.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
